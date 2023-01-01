@@ -17,7 +17,7 @@ Hi, I am Aadit! I am a Computer Science Engineering graduate passionate about cl
 I started this challenge to develop my skills and learn from the community. I am working towards a career in cloud computing. I have already achieved serveral certifications including :
 AWS Certified Cloud Practitioner and AWS Certified Solutions Architect – Associate
 
-By the end of the challenge, I would like to assure myself that I am ready for more certifications as well as ready for my first job!
+By the end of the challenge, I would like to assure myself that I have gained a lot of knowledge, skills and I am ready for more certifications as well as ready for my first job!
 
 - [Blog](https://dev.to/aaditunni)
 - [LinkedIn](https://www.linkedin.com/in/aaditunni)
