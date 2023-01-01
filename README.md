@@ -10,20 +10,17 @@
 5. Update your main README to link back to your Day Journey article
 4. If you need ideas go to [#100DaysOfCloudIdeas](https://github.com/100DaysOfCloud/100DaysOfCloudIdeas)
 
-## How to use this template:
-Fill in your details where you see this icon ✍️
-We have provided a sample Day Journey entry staring at 0. You can delete this example.
+## Aadit's Cloud Journey
 
-## [✍️ Your Name]'s Cloud Journey
+Hi, I am Aadit! I am a Computer Science Engineering graduate passionate about cloud computing, the new possibilities it holds and the new doors it opens for me.
 
-[✍️ Introduce yourself]
+I started this challenge to develop my skills and learn from the community. I am working towards a career in cloud computing. I have already achieved serveral certifications including :
+AWS Certified Cloud Practitioner and AWS Certified Solutions Architect – Associate
 
-[✍️ Tell us why you started this challenge]
+By the end of the challenge, I would like to assure myself that I am ready for more certifications as well as ready for my first job!
 
-[✍️ Tell us where you want to be at the end of the challenge]
-
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+- [Blog](https://dev.to/aaditunni)
+- [LinkedIn](https://www.linkedin.com/in/aaditunni)
 
 ## Stepping out the door
 
