@@ -76,4 +76,4 @@ Created a lamda function to do arithmetic operation of two numbers.
 
 [Blog](https://dev.to/aaditunni/create-a-lambda-to-do-arithmethic-operations-38a0)
 
-[Linkedin]https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7015763513314799616-scJ3?utm_source=share&utm_medium=member_desktop)
+[Linkedin](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7015763513314799616-scJ3?utm_source=share&utm_medium=member_desktop)
