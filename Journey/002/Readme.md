@@ -1,52 +1,79 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Create a Lambda to do Arithmetic  Operations
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create an AWS Lambda with a language of your choice to do arithmetic operations on 2 numbers supplied as input and return the result.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Lambda
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+Search Lambda on your AWS console and select create function. 
 
-### Step 1 — Summary of Step
+### Step 1 — 
+- Click Author from scratch.
+- Give the function a name.
+- Choose a language (you can choose Python and copy the code which I used).
+- Click create function.
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/002/day2.JPG)
 
-### Step 1 — Summary of Step
+### Step 1 — 
+- Clear the default code and write your own code or copy-paste the following code:
+```
+from __future__ import division
+def lambda_handler(event, context):
+   number1 = event['Number1']
+   number2 = event['Number2']
+   num1=int(number1)
+   num2=int(number2)
+   sum = num1 + num2
+   product = num1 * num2
+   difference = abs(num1 - num2)
+   quotient = num1 / num2
+   return {
+       "Number1": num1,
+       "Number2": num2,
+       "Sum": sum,
+       "Product": product,
+       "Difference": difference,
+       "Quotient": quotient
+   }
+```
+- Once you insert your code, click on the dropdown next to Test and click Configure test event
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/002/day2.1.JPG)
 
-### Step 3 — Summary of Step
+### Step 3 — 
+- Give and event name and paste the following (You can change the integer values as you want):
+```
+{
+  "Number1": "10",
+  "Number2": "20"
+}
+```
+- Click create
+- Deploy and click Test to see the results.
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/002/day2.2.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Created a lamda function to do arithmetic operation of two numbers.
 
-## Next Steps
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/002/day2.3.JPG)
 
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
 ✍️ Show that you shared your process on Twitter or LinkedIn
 
-[link](link)
+[Blog](https://dev.to/aaditunni/create-a-lambda-to-do-arithmethic-operations-38a0)
+
+[Linkedin]https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7015763513314799616-scJ3?utm_source=share&utm_medium=member_desktop)
