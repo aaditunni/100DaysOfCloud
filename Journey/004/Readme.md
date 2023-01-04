@@ -1,52 +1,54 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Deploy a WordPress page using CloudFormation
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Deploy a WordPress page using the CloudFormation sample template and write a blog.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
+AWS free tier account.
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- Automate, test, and deploy infrastructure templates with continuous integration and delivery (CI/CD) automations.
+- Run anything from a single Amazon Elastic Compute Cloud (EC2) instance to a complex multi-region application.
+- Define an Amazon Virtual Private Cloud (VPC) subnet or provisioning services like AWS OpsWorks or Amazon Elastic Container Service (ECS) with ease.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- AWS CloudFormation
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+Goto EC2 console and on the the left hand side under Network and Security, select Key Pairs and create one. This will be needed while creating the CloudFormation template.
 
-### Step 1 — Summary of Step
+### Step 1 — 
+Search CloudFormation and select create Stack.
+- Select WordPress blog from the simple category in Select a sample template section and click Next
+- Enter the Stack Name, DbName, DBPassword, DBRootPassword and DBUser.
+- For KeyName, select the Key Pair you created earlier.
+- Leave everyhting as default and click Next and finally click Submit to create the stack.
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/004/day4.JPG)
 
-### Step 1 — Summary of Step
+### Step 3 — 
+- Once the stack is created, goto Outputs and click on the link. This will open a page where you install WordPress.
+- Fill in the details and install.
+- Login and now you have your WOrdPress installed and ready to create a post.
+- Create a blog to test it out.
+- Delete the CloudFormation Stack to cleanup.
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/004/day4.1.JPG)
 
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Deployed a WordPress page using the CloudFormation sample template and wrote a blog.
 
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/004/day4.2.JPG)
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/deploy-a-wordpress-page-using-aws-cloudformation-2jkm)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7016336355479707648-5IQo?utm_source=share&utm_medium=member_desktop)
