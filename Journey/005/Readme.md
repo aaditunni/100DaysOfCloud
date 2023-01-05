@@ -1,52 +1,64 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Create a CloudWatch Alarm
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+A CloudWatch Alarm for an EC2 instance to send a notification when the Alarm triggers an Alert state.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS Free tier account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Customers use Amazon CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in AWS resources. CloudWatch provides system-wide visibility into resource utilization, application performance, and operational health.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- EC2
+- CloudWatch
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+- Launch an EC2 instance that is free tier eligible with a public IP address and supply the [provided bash script](https://github.com/100DaysOfCloud/100DaysOfCloudIdeas/blob/master/Projects/OPS/OPS04/OPS04-AWS200-userdata.sh) to install a simple website with an apache server in the UserData under Advanced details.
+- Visit the the public IP so that you are generating NetworkIn. You need to do this so the Metric appears selectable when create your CloudWatch Alarm
 
-### Step 1 — Summary of Step
+### Step 2 — 
+Search CloudWatchand under All Alarms select Create Alarm.
+- Create a CloudWatch Alarm and click Select metric.
+- Use EC2 NetworkIn as the metric. Make sure you select the EC2 that you created.
 
-![Screenshot](https://via.placeholder.com/500x300)
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.1.JPG)
 
-### Step 3 — Summary of Step
+### Step 3 — 
+- Set your CloudWatch Alarm to use a 5 minute period
+- Set your CloudWatch Alarm to a very low static threshold such as 5000
+- Set the Datapoint to alarms to 3 of 4
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.2.JPG)
+
+### Step 4 — 
+- For Notifications, select In alarm and create a new topic and give your email as the endpoint to recieve the notification when the Alarm is triggered.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.3.JPG)
+
+### Step 5 — 
+- Try to get the Alarm to trigger an Alert state by visiting the website and generating NetworkIN. Wait for few minutes to see the Alarm trigger.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.4.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+When the threshold NetworkIN in crossed, CloudWatch triggers an Alarm and sends a notification to your email.
 
-## Next Steps
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.5.JPG)
 
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/create-a-cloudwatch-alarm-4oje)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7016709047886188544-e8JW?utm_source=share&utm_medium=member_desktop)

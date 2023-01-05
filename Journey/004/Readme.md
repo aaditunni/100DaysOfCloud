@@ -22,7 +22,7 @@ AWS free tier account.
 ### Step 1 — 
 Goto EC2 console and on the the left hand side under Network and Security, select Key Pairs and create one. This will be needed while creating the CloudFormation template.
 
-### Step 1 — 
+### Step 2 — 
 Search CloudFormation and select create Stack.
 - Select WordPress blog from the simple category in Select a sample template section and click Next
 - Enter the Stack Name, DbName, DBPassword, DBRootPassword and DBUser.

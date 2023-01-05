@@ -29,7 +29,7 @@
 
 ![Screenshot](https://via.placeholder.com/500x300)
 
-### Step 1 — Summary of Step
+### Step 2 — Summary of Step
 
 ![Screenshot](https://via.placeholder.com/500x300)
 

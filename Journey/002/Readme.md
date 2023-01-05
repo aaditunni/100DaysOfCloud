@@ -24,7 +24,7 @@ Search Lambda on your AWS console and select create function.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/002/day2.JPG)
 
-### Step 1 — 
+### Step 2 — 
 - Clear the default code and write your own code or copy-paste the following code:
 ```
 from __future__ import division

@@ -29,7 +29,7 @@ EFS allows persistent storage and secure sharing of data. When you have applicat
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/003/day3.JPG)
 
-### Step 1 — 
+### Step 2 — 
 - Create a Security Group for NFS.
     - Give a name, description and for inbound rules select NFS as type and security group of the EC2 instance as the source.
 
