@@ -62,4 +62,4 @@ Created a Cost Budget with an alert threshold to send a notification to your ema
 
 [Blog](https://dev.to/aaditunni/create-a-cost-budget-2jpc)
 
-[LinkedIn](https://www.linkedin.com/posts/aaditunni_create-a-cost-budget-activity-7017093569328898049-bDd-?utm_source=share&utm_medium=member_desktop)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7017094959170252800-HOQZ?utm_source=share&utm_medium=member_desktop)
