@@ -1,52 +1,84 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Creating New EC2 Instance using Snapshot
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Creation of an snapshot of an EC2 instance and launching a new EC2 instance using the AMI of that snapshot.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+EBS Snapshots are a point-in-time copy of your data, and can be used to enable disaster recovery, migrate data across regions and accounts, and improve backup compliance.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- EC2
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+Launch an EC2 Instance.
+ - Create and attach a Security Group allowing inbound traffic for SSH and HTTP from anywhere.
+ - Use the following User data:
+    ```
+    #!/bin/bash
 
-### Step 1 — Summary of Step
+    sudo su
 
-![Screenshot](https://via.placeholder.com/500x300)
+    yum update -y
 
-### Step 1 — Summary of Step
+    yum install httpd -y
 
-![Screenshot](https://via.placeholder.com/500x300)
+    echo "<html><h1> Welcome to Aadit's Server </h1><html>" >> /var/www/html/index.html
 
-### Step 3 — Summary of Step
+    systemctl start httpd
 
-![Screenshot](https://via.placeholder.com/500x300)
+    systemctl enable httpd
+    ```
+- Test the web server by navigating to the instances through its Public IP. 
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.1.JPG)
+
+### Step 2 — 
+Create a Snapshot of EC2 Instance. 
+- Under Elastic Block Store, navigate to Snapshots and create Instance snapshot of your instance.
+- Give a name and description for the snapshot and leave everything else as default.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.2.JPG)
+
+### Step 3 — 
+Create AMI with Snapshot. 
+ - Select the created Snapshot, click on Actions and select 'Create image from snapshot'.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.3.JPG)
+
+### Step 3 — 
+Create an EC2 Instance using newly create AMI. 
+- Navigate to AMIs and launch a new instance of type t2.micro using the AMI and add the following User data:
+    ```
+    #!/bin/bash -ex 
+
+    sudo service httpd restart
+    ```
+- Attach the same Security group used for the previous EC2 Instance.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.4.JPG)
+
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+When the new instance's status is running, navigate to the instance through its Public IP and you should get the same response as from the first Instance.
 
-## Next Steps
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.5.JPG)
 
-✍️ Describe what you think you think you want to do next.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.6.JPG)
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/creating-new-ec2-instance-using-snapshot-2cmi)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7017464758677221376-JIK-?utm_source=share&utm_medium=member_desktop)
