@@ -1,52 +1,59 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Create a simple chatbot using Amazon Lex
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create a simple chatbot using Amazon Lex to teach the bot how to respond to utterances.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
+AWS account.
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Using smart chatbots, Users can automate fundamental user actions in their app. The Amazon Lex constructs conversational answers that answer frequently requested questions.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Amazon Lex
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 —
+Search Lex and click 'Create bot'. You can create a bot with an example bot that has pre-configured languages, intent, etc but for this I am creating a blank bot with nothing pre-configured.
+- Give a name, create a new IAM role and add a language. The voice interaction is given None as it is a chatbot and then click Done.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.1.JPG)
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — 
+Create a New Intent.
+- In the sample utterances, add an utterance which is basically what a user like us would ask the bot.
+- Un the Initial Response, add a response message to the above utterance which is basically what the bot would respond to your input and then save the intent
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.3.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — 
+Go to the Intents list and click 'Add Intent' then 'Add empty Intent' to add one more. You can add as many Intents as you want.
+- Add an utterance and a response and save it.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.4.JPG)
+
+- Click Build to build the chatbot.
+- Once the bot is built, you can click 'Test' to test the chatbot.
 
 ## ☁️ Cloud Outcome
+In the chat bar, type the utterances you added as a message and check the response you get from the chatbot.
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.5.JPG)
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Can improve and continue teaching the chatbot.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/create-a-simple-chatbot-using-amazon-lex-4pfm)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7017795364615270400-3Vn7?utm_source=share&utm_medium=member_desktop)
