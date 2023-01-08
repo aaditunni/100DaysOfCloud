@@ -23,9 +23,9 @@ Search Lex and click 'Create bot'. You can create a bot with an example bot that
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.1.JPG)
-
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.2.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/008/day8.1.JPG)
 
 ### Step 2 — 
 Create a New Intent.
