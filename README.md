@@ -32,7 +32,7 @@ By the end of the challenge, I would like to assure myself that I have gained a 
 - [ ] ☁️ 6 > [My Sixth Day](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [My Seventh Day](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [My Eight Day](Journey/008/Readme.md)
-- [ ] ☁️ 9 > [](Journey/009/Readme.md)
+- [ ] ☁️ 9 > [My Ninth Day](Journey/009/Readme.md)
 - [ ] ☁️ 10 > [](Journey/010/Readme.md)
 
 ## Walking down the road
