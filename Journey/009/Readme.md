@@ -79,4 +79,4 @@ Navigate to both the Public IP and the Elastic IP of the EC2 instance to validat
 
 [Blog](https://dev.to/aaditunni/create-elastic-network-interface-multiple-ips-on-an-ec2-3189)
 
-[LinkedIn]([lihttps://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7018185848588251136-S9Zc?utm_source=share&utm_medium=member_desktopnk](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7018185848588251136-S9Zc?utm_source=share&utm_medium=member_desktop))
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7018185848588251136-S9Zc?utm_source=share&utm_medium=member_desktop)
