@@ -37,7 +37,7 @@ EC2
 
         systemctl enable httpd
 
-        echo "<html> <h1> Response coming from server </h1> </ html>" > /var/www/html/index.html
+        echo "<html> <h1> Hello, Welcome to my page. </h1> </ html>" > /var/www/html/index.html
     ```
 - Remember the Availability Zone and the Subnet id.
 
