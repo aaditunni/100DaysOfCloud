@@ -1,52 +1,82 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Create an Elastic Network Interface - Multiple IPs on an EC2
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create an additional elastic network interface and an additional elastic IP.  Attach these additional created resources with EC2, and use another security group with HTTP permission to test it.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+EC2
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+- Create a Security Group for the EC2 Instance that allows inbound HTTP traffic from anywhere.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Create a Security Group for the Network Interface that allows inbound HTTP traffic from anywhere.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Launch an EC2 instance that is free tier eligible. Use the security group created previously for EC2 instance. Keep everything else as default and add this User data:
+    ```
+        #!/bin/bash
 
-### Step 3 — Summary of Step
+        sudo su
 
-![Screenshot](https://via.placeholder.com/500x300)
+        yum update -y
+
+        yum install -y httpd
+
+        systemctl start httpd
+
+        systemctl enable httpd
+
+        echo "<html> <h1> Response coming from server </h1> </ html>" > /var/www/html/index.html
+    ```
+- Remember the Availability Zone and the Subnet id.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.2.JPG)
+
+### Step 2 — 
+Go to Network Interfaces under Network and Security.
+- Create a Network Interface and select the same subnet as the EC2 is in. Select the security group created before for the Network Interface.
+- Click on actions, select Attach and attach it to the EC2 instance you created.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.3.JPG)
+
+### Step 3 — 
+Go to Elastic IPs under Network and Security.
+- Create an Elastic IP by clicking on Allocate Elastic IP address.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.4.JPG)
+
+### Step 3 — 
+Go back to the Network Interface created and associate the Elastic IP to it.
+- Select the Network Interface, click on actions and click Associate Address.
+- Select the Elastic IP address allocated and the Private IP.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.5.JPG)
 
 ## ☁️ Cloud Outcome
+We can see that IPv4 Public IP and the Elastic IP address are assigned to the same EC2 Instance. ie. multiple Public IPs for a single EC2 instance. Also, there will be 2 Private IPv4 addresses assigned.
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.6.JPG)
 
-## Next Steps
+Navigate to both the Public IP and the Elastic IP of the EC2 instance to validate that the server responses.
 
-✍️ Describe what you think you think you want to do next.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.7.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.8.JPG)
+
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/create-elastic-network-interface-multiple-ips-on-an-ec2-3189)
 
-[link](link)
+[LinkedIn](lihttps://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7018185848588251136-S9Zc?utm_source=share&utm_medium=member_desktopnk)
