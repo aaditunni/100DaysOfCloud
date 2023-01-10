@@ -4,7 +4,7 @@
 
 In this, we will be implementing a serverless reminder application. The Web application will load from an S3 bucket as a static website and run in browser, communicate with Lambda and Step functions via an API Gateway Endpoint. Using the application you will be able to configure reminders to be send using email.
 
-This was inspired by on eof the projects by Adrian Cantrill. You can check out his project which has detailed explanation: 
+This was inspired by one of the projects by Adrian Cantrill. You can check out his project which has detailed explanation: 
 https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-serverless-pet-cuddle-o-tron 
 
 ## Prerequisite
