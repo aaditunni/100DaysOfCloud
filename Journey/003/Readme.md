@@ -109,6 +109,8 @@ This outcome shows that you were able to access a file you created on one EC2 in
 
 Try creating a third EC2 instance and mounting the EFS to that.
 
+Delete the resources created such as EC2 instances, EFS to cleanup.
+
 ## Social Proof
 
 [Blog](https://dev.to/aaditunni/create-an-efs-shared-file-system-3abi)
