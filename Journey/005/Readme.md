@@ -24,7 +24,7 @@ Customers use Amazon CloudWatch to collect and track metrics, collect and monito
 - Visit the the public IP so that you are generating NetworkIn. You need to do this so the Metric appears selectable when create your CloudWatch Alarm
 
 ### Step 2 — 
-Search CloudWatchand under All Alarms select Create Alarm.
+Search CloudWatch and under All Alarms select Create Alarm.
 - Create a CloudWatch Alarm and click Select metric.
 - Use EC2 NetworkIn as the metric. Make sure you select the EC2 that you created.
 
@@ -49,6 +49,8 @@ Search CloudWatchand under All Alarms select Create Alarm.
 - Try to get the Alarm to trigger an Alert state by visiting the website and generating NetworkIN. Wait for few minutes to see the Alarm trigger.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/005/day5.4.JPG)
+
+- Delete the EC2 instance and the CloudWatch Alarm to cleanup.
 
 ## ☁️ Cloud Outcome
 
