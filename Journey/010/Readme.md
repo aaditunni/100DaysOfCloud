@@ -1,4 +1,3 @@
-**Add a cover photo like:**
 ![placeholder image](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/Pictures/cover.jpg)
 
 # Create a Serverless Reminder App
