@@ -1,52 +1,87 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![placeholder image](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/public-subnet-traffic.png)
 
-# New post title here
+# Create a VPC with resources to communicate with the Internet
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+A VPC with a Public Subnet and an Internet Gateway that allows an EC2 Instance to communicate with the internet.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- EC2
+- VPC
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+Create a VPC.
+- Search VPC and click Create VPC.
+- In Resources to create, select VPC only.
+- Give a name.
+- Select IPv4 CIDR manual input and enter 10.0.0.0/16 .
+- Select No IPv6 CIDR block Tenancy as Default.
+- Create VPC.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/day11.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — 
+Create a Subnet.
+- Click on Subnets on left side in VPC console.
+- Click Create Subnet.
+- For VPC ID, select the VPC that was created earlier.
+- In Subnet settings, give a subnet name indicating that it is a public subnet.
+- Choose an Availability Zone.
+- Enter 10.0.0.0/24 for IPv4 CIDR block.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/day11.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — 
+Create an EC2 instance.
+- Select the AMI and OS that is free tier eligible. 
+- Create a Key Pair.
+- Under Network Settings, select the VPC and Subnet that was created earlier.
+- Enable Auto-assign public IP.
+- Create a Security group. Remove existing rule andd only add the rule that allows ALL ICMP-IPv4, from anywhere in source type in inbound rules.
+- Launch Instance.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/day11.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Copy the Public IPv4 address and ping it from your computer. You can notice that all the packets that sent was lost. This is because we haven't configured an Internet Gateway to route the traffic through the Internet.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/day11.3.JPG)
+
+### Step 4 — 
+Create an Internet Gateway.
+- Go to VPC and select Internet gateway on left side.
+- Click Create internet gateway.
+- Click on Actions and select Attach to VPC and select the VPC that was created earlier.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/day11.4.JPG)
+
+### Step 5 —
+Edit the Route table.
+- Got to Route tables on left side of VPC console.
+- Select the Route table of the VPC we created earlier.
+- Under Routes, Click Edit route.
+- Add Route > Destination : 0.0.0.0/0 and Target : choose the Internet Gateway and select the Internet Gateway that was created earlier.
+- Save changes.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Ping into the EC2 instance from your computer and you'll get reply from the Instance.
 
-## Next Steps
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/011/day11.5.JPG)
 
-✍️ Describe what you think you think you want to do next.
+Successfully created a VPC with an EC2 instance in a Public Subnet with Internet Gateway to route traffic through the Internet.
+
+Terminate the EC2 instance, delete Key Pairs, delete Security group, detach and delete Internet Gateway, delete Subnet and then delete VPC to cleanup.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/create-a-vpc-with-resources-to-communicate-with-the-internet-1abf)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7018917549073444865-iso7?utm_source=share&utm_medium=member_desktop)
