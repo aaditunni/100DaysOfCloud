@@ -74,6 +74,8 @@ Navigate to both the Public IP and the Elastic IP of the EC2 instance to validat
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/009/day9.8.JPG)
 
+Terminate the EC2 instance, delete the ENI and release the Elastic IP to cleanup.
+
 
 ## Social Proof
 
