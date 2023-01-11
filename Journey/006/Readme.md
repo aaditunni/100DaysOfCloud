@@ -55,6 +55,8 @@ If you creating a Budget using a template then your Alerts are pre configured bu
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/006/day6.5.JPG)
 
+- Delete the Cost Budget to cleanup.
+
 ## ☁️ Cloud Outcome
 
 Created a Cost Budget with an alert threshold to send a notification to your email when it hits the threshold mark.
