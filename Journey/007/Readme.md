@@ -68,6 +68,8 @@ Create an EC2 Instance using newly create AMI.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/007/day7.4.JPG)
 
+Delete the EC2 instances, AMI and Snapshot to cleanup.
+
 
 ## ☁️ Cloud Outcome
 
