@@ -43,6 +43,8 @@ Go to the Intents list and click 'Add Intent' then 'Add empty Intent' to add one
 - Click Build to build the chatbot.
 - Once the bot is built, you can click 'Test' to test the chatbot.
 
+- Delete the bot to cleanup.
+
 ## ☁️ Cloud Outcome
 In the chat bar, type the utterances you added as a message and check the response you get from the chatbot.
 
