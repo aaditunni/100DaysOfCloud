@@ -47,7 +47,7 @@ Create one more Identity with the email you want the reminder to be received.
 In this stage, We need to create a Lambda function which will be used by the serverless application to create an email and then send it using SES. 
 Before that we need to create an IAM role which the Lambda will use to interact with other AWS services.
 
-- Create a Lambda Role in CLoudFormation using the [yaml file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/CloudFormation/lambdarolecfn.yaml).
+- Create a Lambda Role in CLoudFormation using the [yaml file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/CloudFormation/lambdarolecfn.yaml). Make sure you unzip the file.
     - Search CloudFormation and select Create Stack.
     - Select Template is Ready option and select upload a template file and choose the lambdarolecfn.yaml file and upload it and click Next.
     - Enter Stack name as LAMBDAROLE, click Next till you reach the last section.
@@ -94,7 +94,7 @@ Before that we need to create an IAM role which the Lambda will use to interact 
 ### Step 3 — Implement and configure the state machine, the core of the application
 In this stage, we need to create an IAM role which the state machine that we create will use to interact with other AWS services.
 
-- Create a State Machine Role in CLoudFormation using the [yaml file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/CloudFormation/statemachinerole.yaml).
+- Create a State Machine Role in CLoudFormation using the [yaml file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/CloudFormation/statemachinerole.yaml). Make sure you unzip the file.
     - Search CloudFormation and select Create Stack.
     - Select Template is Ready option and select upload a template file and choose the statemachinerole.yaml file and upload it and click Next.
     - Enter Stack name as StateMachineRole, click Next till you reach the last section.
@@ -298,7 +298,7 @@ In this stage, you will create an S3 bucket and static website hosting which wil
 
     ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/Pictures/day10.13.JPG)
 
-- Download and edit the [front end files](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/tree/main/Journey/010/Webpage).
+- Download and edit the [front end files](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/tree/main/Journey/010/Webpage). Make sure you unzip the file.
     - Open the serverless.js in a code/text editor.
     - Locate the placeholder REPLACEME_API_GATEWAY_INVOKE_URL and replace it with your API Gateway Invoke URL(found in the API Gateway console) and at the end of this URL add /remindo - Save the file.
     - Return to the S3 console Click on the Objects Tab.
