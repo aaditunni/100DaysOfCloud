@@ -1,52 +1,68 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Create a text transcript using Amazon Transcribe
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create a text transcript of a recorded audio file using Amazon Transcribe.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Amazon Transcribe enables voice to text at scale. Use Amazon Transcribe for a wide range of audio or videos files, such as customer service calls, business meetings, broadcast TV, and on-demand videos.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- S3
+- Amazon Transcribe
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+Select a region that has Amazon Transcribe.
+Search S3 and click Create bucket.
+- Give an unique name, select the region and leave everything as default options.
+- Create bucket.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/day12.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — 
+- Download the [audio file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/transcribe-sample.5fc2109bb28268d10fbc677e64b7e59256783d3c.mp3). Make sure you unzip the folder.
+- Go to your bucket and to the Objects tab and click upload.
+- Upload the audio file that you downloaded.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/day12.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — 
+Search Transcribe.
+- On left side, click Transcription jobs.
+- Click Create job.
+- Enter Name and leave everything else as default.
+- In Input data, browse to your S3 bucket and select your audio file(object).
+- Leave Output data as default and click Next.
+- Leave everything else as default choice and create the job.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/day12.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/day12.3.JPG)
+
+### Step 4 — 
+Once it is created, wait for the Status to show Complete.
+Open it and go to the Transcription preview to see the output.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/day12.4.JPG)
+
+Empty the S3 bucket, then delete it and delete the Transcription job to cleanup.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/012/day12.5.JPG)
 
-## Next Steps
 
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/create-a-text-transcript-using-amazon-transcribe-234l)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7019280905206706176-hQgs?utm_source=share&utm_medium=member_desktop)
