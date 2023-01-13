@@ -45,7 +45,7 @@ Query the DynamoDB table.
 - Click on the arrow next to Scan/Query Item.
 - Select Query.
 - You can query the table in many ways.
-- In Country boc (Partition key), enter Argentina (or the name of the country you added) and choose Run. All the players from Argentina in the table will be listed.
+- In Country box (Partition key), enter Argentina (or the name of the country you added) and choose Run. All the players from Argentina in the table will be listed.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/013/day13.3.JPG)
 
@@ -53,7 +53,7 @@ Query the DynamoDB table.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/013/day13.4.JPG)
 
-- We can narrow down the query results. In Country box, enter France and in Players boc (Sort key), select Begin with from the dropdown list and enter Z .
+- We can narrow down the query results. In Country box, enter France and in Players box (Sort key), select Begin with from the dropdown list and enter Z .
 - Run the query an you'll notice that only players from France whose name starts with the letter Z is displayed.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/013/day13.5.JPG)
