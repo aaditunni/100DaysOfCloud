@@ -1,52 +1,71 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Deploy Docker Containers on Amazon ECS
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Run a Docker-enabled sample application on an Amazon ECS cluster behind a load balancer and test the sample application.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Amazon Elastic Container Service (Amazon ECS) is the AWS service you use to run Docker applications on a scalable cluster.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Amazon Elastic Container Service (Amazon ECS)
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+Create container and task definition
+- Search ECS (disable the New ECS experience) and click Get started.
+- In Container definition field, select sample-app.
+- Leave the Task definition with default configuration and click Next.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — 
+Define your service
+- In the Define your service section, select Application Load Balance under Load Balancer type.
+- Leave everything else as default configuration and click Next.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — 
+Configure your cluster
+- Enter a Cluster name and click Next.
+- Select Create to create.
+- Wait for it to launch and after the launch is complete, click View service. 
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 4 — 
+Under the Details tab, click on the entry under Target Group Name. It will redirect you to the Target group page.
+- Click on the target group name.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.3.JPG)
+
+In the Details section, click on the Load Balancer link. This link will take you to the Load Balancer that the container uses.
+- Click and open the Load balancer.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.4.JPG)
+
+In the Details tab, copy the DNS name, paste it into a new browser tab and hit enter to view the sample application.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.5.JPG)
+
+Go back to the ECS console, select the cluster name and click Delete to cleanup.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/014/day14.6.JPG)
 
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Learned how to configure and deploy your Docker-enabled application to Amazon ECS
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/deploy-docker-containers-on-amazon-ecs-ljk)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7020092564041084928-mljc?utm_source=share&utm_medium=member_desktop)
