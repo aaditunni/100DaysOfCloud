@@ -22,6 +22,9 @@ By the end of the challenge, I would like to assure myself that I have gained a 
 - [Blog](https://dev.to/aaditunni)
 - [LinkedIn](https://www.linkedin.com/in/aaditunni)
 
+## 
+These challenges or projects may or may not cost you money. If it's under free tier, I will be mentioning 'AWS free tier account' under Prerequisite and if it costs money or I am not sure about whether it will incure charges or not, I'll be mentining only 'AWS account' under Prerequisite. 
+
 ## Stepping out the door
 
 - [ ] ☁️ 1 > [My First Day](Journey/001/Readme.md)
