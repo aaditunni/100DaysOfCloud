@@ -1,52 +1,58 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Translate Text Between Languages in the Cloud
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+As a developer, language translation is a challenge you will face when developing multi-lingual websites and applications, translating user-generate content, or supporting real-time communication in an application. Amazon Translate enables you to meet this challenge by delivering accurate natural sounding translation using a cloud based deep learning API.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Use Amazon Translate to enable multilingual sentiment analysis of social media content, provide the on-demand translation of user-generated content, and add the real-time translation for communications applications.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Amazon Translate
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+- Go to Amazon Translate console.
+- Click on Launch real-time translation.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/017/day17.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — 
+- For Source language, select Arabic. 
+- For Target language, select English. 
+- You can see the full list of languages that Amazon Translate supports from the drop-down list.
+- In scenarios where you won't know the source language, Translate can auto detect it for you.
+- In the Source Code box, copy then paste the following text:
+    ```
+    لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.
 
-### Step 1 — Summary of Step
+    و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض المتعة ؟ 
+    علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم .
+	```       
 
-![Screenshot](https://via.placeholder.com/500x300)
+- The results of the translation process will automatically appear in the Target language section.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/017/day17.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 3 — 
+ - In the JSON samples panel, you can see the JSON input and output. This is useful for debugging your code when using the AWS CLI or AWS SDK.
+ -  For workloads that need to scale, you would want to use the Translate API via the AWS CLI or the AWS SDK instead of using the console.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/017/day17.2.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Understood how Amazon Translate can enable you to translate text using the AWS Web Console.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/translate-text-between-languages-in-the-cloud-4c3o)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7021028184049500162-afn-?utm_source=share&utm_medium=member_desktop)
