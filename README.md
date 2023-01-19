@@ -48,7 +48,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 16 > [My Sixteenth Day](Journey/016/Readme.md)
 - [ ] ☁️ 17 > [My Seventeenth Day](Journey/017/Readme.md)
 - [ ] ☁️ 18 > [My Eighteenth Day](Journey/018/Readme.md)
-- [ ] ☁️ 19 > [](Journey/019/Readme.md)
+- [ ] ☁️ 19 > [My Nineteenth Day](Journey/019/Readme.md)
 - [ ] ☁️ 20 > [](Journey/020/Readme.md)
 
 ## Crossing the bridge
