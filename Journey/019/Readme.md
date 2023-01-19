@@ -75,11 +75,12 @@ AWS ElastiCache for Redis
 
 ### Step 3 — Connect to Redis
 - Click on the Redis cluster.
-- Under Details, Copy the Configuration Endpoint.
+- Under Details, copy the Configuration Endpoint.
 - Run this command to connect to your Redis node:
     ```
     src/redis-cli -c -h endpoint -p 6379
     ```
+    - Replace endpoint with your Configuration Endpoint.
     - If it doesn't connect then remove ':6379' from the endpoint and run the above command.
 - Test the connection with a PING.
     - Type PING and run it to get PONG as reply.
