@@ -1,52 +1,78 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Create a new Customer Master Key (CMK) in Key Management Service (KMS) and encrypt an object
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create a new Customer Master Key (CMK) in Key Management Service (KMS), create a S3 bucket, upload an object an encrypt it.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Key Management Service (KMS)
+- S3
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — Create a CMK
+- Go to Key Management Service (KMS) console.
+- Click on Create a Key.
+- Select Symmetric as Key type.
+- Select Encrypt and decrypt as key usage and click Next
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Give an Alias or Name for the key.
+- Give a Description (optional) and click Next.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Choose the IAM user in Key administration permissions.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Choose the IAM user in Key usage permissions.
+- Click Next and then click Finish to create the key.
+
+### Step 2 — Create S3 Bucket 
+- Go to S3 console.
+- Click Create Bucket.
+- Give an unique name and select the region.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.3.JPG)
+
+- Under Default encryption, select AWS Key Management Service (SSE-KMS).
+- Click Choose from your AWS KMS Keys and select the key that was created earlier.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.4.JPG)
+
+- Leave the rest as default configurations and Create bucket.
+
+
+### Step 3 — Upload Object to S3 Bucket
+- Go to the bucket and under Objects tab, click on Upload to upload an object to the bucket.
+- Click on Add files.
+- Upload any file you want.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.5.JPG)
+
+- Click on the image and in Properties tab, Scroll down to server side encryption and you will notice that since the bucket is encrypted by KMS-CMK, all the objects uploaded to it are encrypted by default.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/020/day20.6.JPG)
+
+### Step 4 - Cleanup
+- Empty the bucket and then delete it.
+- Select the key that was created and disable it.
+- Select the key and click on Key actions and click Schedule Key deletion.
+- Enter waiting period as 7, confirm and schedule the deletion. The key will be automatically deleted after 7 days. 
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Created a new Customer Master Key (CMK) in Key Management Service (KMS) and encrypted an S3 object.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/create-a-new-customer-master-key-cmk-in-key-management-service-kms-and-encrypt-an-object-193f)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7022187176264118272-UeJv?utm_source=share&utm_medium=member_desktop)
