@@ -2,7 +2,7 @@
 
 ## Introduction
 
- Create a Document DB and learn how to connect to your Amazon DocumentDB cluster from your AWS Cloud9 environment with a mongo shell and run a few queries.
+ Create a DocumentDB and learn how to connect to your Amazon DocumentDB cluster from your AWS Cloud9 environment with a mongo shell and run a few queries.
 
 ## Prerequisite
 
