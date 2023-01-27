@@ -59,7 +59,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 24 > [My Twenty-fourth Day](Journey/024/Readme.md)
 - [ ] ☁️ 25 > [My Twenty-fifth Day](Journey/025/Readme.md)
 - [ ] ☁️ 26 > [My Twenty-sixth Day](Journey/026/Readme.md)
-- [ ] ☁️ 27 > [](Journey/027/Readme.md)
+- [ ] ☁️ 27 > [My Twenty-seventh Day](Journey/027/Readme.md)
 - [ ] ☁️ 28 > [](Journey/028/Readme.md)
 - [ ] ☁️ 29 > [](Journey/029/Readme.md)
 - [ ] ☁️ 30 > [](Journey/030/Readme.md)
