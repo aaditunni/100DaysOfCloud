@@ -294,7 +294,7 @@ In this stage, you will create an S3 bucket and static website hosting which wil
     - Scroll down and locate Static website hosting and click Edit.
     - Select Enable Select Host a static website.
     - For both Index Document and Error Document enter index.html.
-    - Click ave Changes.
+    - Click Save Changes.
 
     ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/010/Pictures/day10.13.JPG)
 
