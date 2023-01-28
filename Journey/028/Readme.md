@@ -119,10 +119,6 @@ Cleanup:
 - Delete Origin access control by navigating to Origin access under Security on left side menu in the CloudFormation console.
 - Empty and Delete S3 bucket.
 
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-
 ## ☁️ Cloud Outcome
 
 Hosted a static website with S3 & CloudFront.
