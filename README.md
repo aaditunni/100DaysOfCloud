@@ -62,7 +62,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 27 > [My Twenty-seventh Day](Journey/027/Readme.md)
 - [ ] ☁️ 28 > [My Twenty-eight Day](Journey/028/Readme.md)
 - [ ] ☁️ 29 > [My Twenty-ninth Day](Journey/029/Readme.md)
-- [ ] ☁️ 30 > [](Journey/030/Readme.md)
+- [ ] ☁️ 30 > [My Thirtieth Day](Journey/030/Readme.md)
 
 ## Into the bushy, thorny forest
 
