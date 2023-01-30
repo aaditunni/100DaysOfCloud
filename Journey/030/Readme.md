@@ -1,52 +1,67 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Analyze and Compare images using Amazon Rekognition
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Use Amazon Rekognition to analyze an image and then compare it to other images to see if the faces are the same.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Identifying persons of interest, cataloging a digital library, creating a face-based employee verification system, or performing sentiment analysis.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Amazon Rekognition
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — Analyzing faces
+- Go to the Amazon Rekognition console.
+- Select Facial analysis on the left side menu. 
+    - This feature allows you to analyze faces in an image and receive a JSON response.
+- Download [this picture](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/pic1.jpg) and unzip it.
+- Click the Upload button and select the image you just downloaded.
+- Under the Results dropdown, click through and see quick results for each face that was detected.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/day30.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Click on the Response dropdown to see the JSON results. Notice that under the emotions results, there are numerous detected emotions.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/day30.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Comparing different faces
+- Select Face comparison in the left side menu.
+- Download [this picture](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/pic2.jpg) and unzip it.
+- Click on the Upload button for the reference face and select the image you just downloaded.
+- Click on the Upload button for the comparison face and select the first image that was downloaded in Step 1.
+- In Results dropdown,  see that the reference wasn’t a match for any of the detected faces in the comparison faces image.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/day30.3.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Click on the Response dropdown to see the JSON results. Notice that the “Similarity” score for each of the detected faces never exceeds 1. The similarity score ranges from 1-100 and the threshold can be adjusted when using the API.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/day30.4.JPG)
+
+### Step 3 — Comparing same faces
+- Download [this picture](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/pic3.jpg) and unzip it.
+- Click on the Upload button for the reference face and select the image you just downloaded.
+- You can notice that the reference face that was compared to the other photo detected a 99% similarity score and detected that all other faces were not a match.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/day30.5.JPG)
+
+- Click on the Response dropdown to see the details of each comparison.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/030/day30.6.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+ Analyze and compared faces using Amazon Rekognition.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/analyze-and-compare-images-using-amazon-rekognition-3h06)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7025757716392337408-qT10?utm_source=share&utm_medium=member_desktop)
