@@ -1,52 +1,72 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Increase service limits/quotas in AWS
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for some 
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Support
+- Service Quotas
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+Support
+- Goto the support console.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- On left side menu, select Your support cases.
+- Click Create case.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Click on Looking for service limit increases?
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Select Limit type - basically an AWS service you want to increase the limit for (EC2 Instance).
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.3.JPG)
+
+- Under Requests, select the Region and the Instance type (here the service selected is EC2 instance).
+- Enter the new limit of the service.
+- It is possible to add multiple requests for the same service by Adding another request.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.4.JPG)
+
+- Enter a Use case description for the support team to review and understand the reason for your limit increase. The more clarity there is, the smoother the process is. By default, their motive is to reduce the risk of accidentally incurring a huge amount of bill and would deny if the use case is not good enough or would increase little by little.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.5.JPG)
+
+- Select the contact method you prefer the support team to contact you through.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.6.JPG)
+
+Service Quotas
+Another way to increase the service quota or limit is by using Service Quota console and requesting a quota increase. This is the new limit increase dashboard/service but all the services are not supported at this time.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.7.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.8.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.9.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.10.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Learned to increase the service limit.
 
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/036/day36.11.JPG)
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/increase-service-limitsquotas-in-aws-5gn0)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7027946131208716288-mgzk?utm_source=share&utm_medium=member_desktop)
