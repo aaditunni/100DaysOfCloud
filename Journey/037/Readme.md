@@ -218,11 +218,11 @@ If you haven't created a QuickSight account then follow these steps :
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/037/day37.21.JPG)
 
-    - For VPC connection name, type RDSVPC.
-    - For VPC ID, choose the id of the RDS DB.
-    - For Subnet ID, choose one of the subnet the RDS DB is in.
-    - For Security group ID, paste the id of RDS SG.
-    - Create.
+   - For VPC connection name, type RDSVPC.
+   - For VPC ID, choose the id of the RDS DB.
+   - For Subnet ID, choose one of the subnet the RDS DB is in.
+   - For Security group ID, paste the id of RDS SG.
+   - Create.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/037/day37.21.5.JPG)
 
@@ -242,7 +242,7 @@ If you haven't created a QuickSight account then follow these steps :
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/037/day37.23.JPG)
 
-    - Choose Validate connection. If the connection was successful, choose Create data source.
+   - Choose Validate connection. If the connection was successful, choose Create data source.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/037/day37.24.JPG)
 
