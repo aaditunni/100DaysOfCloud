@@ -73,7 +73,7 @@ Create and visualize data in an Amazon Relational Database (Amazon RDS) MS SQL E
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/037/day37.8.JPG)
 
-    Authentication - SQL Server Authentication.
+   - Authentication - SQL Server Authentication.
     - For Login, type the username you entered when creating the database.
     - For Password, type the password you entered when creating the database.
     - Connect.
