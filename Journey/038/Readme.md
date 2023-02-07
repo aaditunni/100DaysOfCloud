@@ -16,7 +16,7 @@ AWS free tier account.
 
 ## Try yourself
 
-Make sure you use the name I mentioned as the code is based on the names I provided. 
+Make sure you use the name I mentioned as the code is based on the names I provided and also make sure the region is set to us-east-1.
 
 ### Step 1 — Create source and destination S3 buckets.
 Source bucket.
