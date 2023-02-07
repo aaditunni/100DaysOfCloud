@@ -73,7 +73,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 35 > [My Thirty-fifth Day](Journey/035/Readme.md)
 - [ ] ☁️ 36 > [My Thirty-sixth Day](Journey/036/Readme.md)
 - [ ] ☁️ 37 > [My Thirty-seventh Day](Journey/037/Readme.md)
-- [ ] ☁️ 38 > [](Journey/038/Readme.md)
+- [ ] ☁️ 38 > [My Thirty-eight Day](Journey/038/Readme.md)
 - [ ] ☁️ 39 > [](Journey/039/Readme.md)
 - [ ] ☁️ 40 > [](Journey/040/Readme.md)
 
