@@ -75,7 +75,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 37 > [My Thirty-seventh Day](Journey/037/Readme.md)
 - [ ] ☁️ 38 > [My Thirty-eight Day](Journey/038/Readme.md)
 - [ ] ☁️ 39 > [My Thirty-ninth Day](Journey/039/Readme.md)
-- [ ] ☁️ 40 > [](Journey/040/Readme.md)
+- [ ] ☁️ 40 > [My Fortieth Day](Journey/040/Readme.md)
 
 ## Trekking the dunes
 
