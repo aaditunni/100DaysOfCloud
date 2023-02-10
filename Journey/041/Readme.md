@@ -56,7 +56,8 @@ Region - us-east-1
 - Select the SNS topic and click on Edit.
 - Click on Access policy. Paste the below json policy. 
 - Replace ACCOUNT_ID with your account id, TOPIC_NAME with your SNS topic name and S3_ARN with the ARN of your S3 bucket.
-```{
+```
+{
   "Version": "2008-10-17",
   "Id": "__default_policy_ID",
   "Statement": [
