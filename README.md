@@ -81,7 +81,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 
 - [ ] ☁️ 41 > [My Forty-first Day](Journey/041/Readme.md)
 - [ ] ☁️ 42 > [My Forty-second Day](Journey/042/Readme.md)
-- [ ] ☁️ 43 > [](Journey/043/Readme.md)
+- [ ] ☁️ 43 > [My Forty-third Day](Journey/043/Readme.md)
 - [ ] ☁️ 44 > [](Journey/044/Readme.md)
 - [ ] ☁️ 45 > [](Journey/045/Readme.md)
 - [ ] ☁️ 46 > [](Journey/046/Readme.md)
