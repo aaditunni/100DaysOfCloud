@@ -1,52 +1,49 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Amazon Polly
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Amazon Polly uses deep learning technologies to synthesize natural-sounding human speech.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- Convert articles to speech. 
+- With dozens of lifelike voices across a broad set of languages, use Amazon Polly to build speech-activated applications.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Amazon Polly
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+- Go to the Amazon Polly console.
+- Click on Try Polly.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/048/day48.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Select between Neural and Standard. Neural produces the most natural and human-like speech possible while Standard produces natural-sounding speech.
+- Select any Language and any Voice you like. It supports a wide variety of Voices and Languages.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/048/day48.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Enter the input text that you want to be converted into speech.
+- Click on Listen to listen to the speech converted from the text.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/048/day48.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- You can also customize pronunciations by adding Lexicons.
+- You can download the Speech as well as save to S3 along with changing the format of the audio.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Checked out and experimented with Amazon Polly and learned more about its use cases.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/amazon-polly-pgo)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7032437994917642240-U7Ux?utm_source=share&utm_medium=member_desktop)
