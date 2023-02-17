@@ -28,7 +28,7 @@ Amazon Polly
 - Select between Neural and Standard. Neural produces the most natural and human-like speech possible while Standard produces natural-sounding speech.
 - Select any Language and any Voice you like. It supports a wide variety of Voices and Languages.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/048/day48.2.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/048/day48.2.png)
 
 - Enter the input text that you want to be converted into speech.
 - Click on Listen to listen to the speech converted from the text.
