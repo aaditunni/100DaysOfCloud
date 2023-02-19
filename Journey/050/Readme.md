@@ -1,52 +1,79 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+#  Automate the EBS Snapshot and AMIs creation using Amazon Data Lifecycle Manager
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Data Life Cycle Manager is an easy an automated way to backup and delete data stored on EBS. 
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- AWS free tier account.
+- EC2 instance.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- Define policies to enforce backup on regular schedule.
+- Use of tag to identify volumes and instance defined in the policies.
+- Manage cost by deleting snapshots. 
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+EC2
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
 
-### Step 1 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 1 — 
+- Go to the EC2 console.
+- On the left side menu, under Elastic Block Store, select Lifecycle Manager.
+- Select EBS Snapshot Policy from policy type dropdown menu. - Click on Next step.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- You have an option to take snapshot of specific Volume by specifying the tag or at instance level which will take snapshot of all the EBS volumes associated with the instance.
+- Select instance and select your instance from the tags.
+- Click on Add.
+- Give a policy description and select the Default role.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.2.JPG)
+
+- Make sure policy status is Enabled.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.3.JPG)
+
+- Click on Next. 
+- Give your Schedule name.
+ - Select the Frequency(Daily, Weekly, Monthly, Yearly or Custom cron expression).
+ - You can schedule this snapshot every (1,2,3,4,6,8,12,24 hour).
+ - Specify the starting time(NOTE timing is in UTC, so please adjust it based on the requirement as you don’t want your snapshot to be happen during Production hour).
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.4.JPG)
+
+ - Specify how many copies of snapshot you want to maintain. - Check Copy tags from source option so that snapshot will have same tag as your instance tag.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.5.JPG)
+
+ - In the next screen, click on Create policy.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.6.JPG)
+
+- You need to wait atleast 1 hour after configuring the snapshot for it to be listed under Snapshot dashboard.
+- Automating the process of AMI creation is similar to EBS Snapshot. For AMI creation from the drop-down choose EBS-backed AMI policy.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.7.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Created an EBS Snapshot Policy to automate the EBS Snapshot using Amazon Data Lifecycle Manager.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Try automating the AMIs creation using Amazon Data Lifecycle Manager.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/automate-the-ebs-snapshot-and-amis-creation-using-amazon-data-lifecycle-manager-2gih)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7033200907253166080-ooco?utm_source=share&utm_medium=member_desktop)
