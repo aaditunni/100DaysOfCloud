@@ -88,7 +88,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 47 > [My Forty-seventh Day](Journey/047/Readme.md)
 - [ ] ☁️ 48 > [My Forty-eight Day](Journey/048/Readme.md)
 - [ ] ☁️ 49 > [My Forty-ninth Day](Journey/049/Readme.md)
-- [ ] ☁️ 50 > [](Journey/050/Readme.md)
+- [ ] ☁️ 50 > [My Fiftieth Day](Journey/050/Readme.md)
 
 ## Winding through the canyons
 
