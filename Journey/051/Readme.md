@@ -1,52 +1,109 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Launch and connect Windows-EC2 using RDC
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create and connect to an EC2 Instance running the latest Windows free tier AMI and then connect to it from your machine using RDC. Install Internet Information Services (IIS), create a custom webpage and host it on that EC2 Instance.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+EC2
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — 
+- Go to the EC2 console.
+- Launch an EC2 Instance. 
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+    - Windows Server 2022 Base AMI of type t2.micro.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+    - Under Security Group section create a new SG with RDP (Remote Desktop Connection) from anywhere.
+    - Create a RSA(.pem) key pair and download it.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- When the instance's state changes to running, go to the instance details and click on Connect.
+- Choose RDP client.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.3.JPG)
+
+- Click on Get password.
+- Click on Upload private key and upload the key pair that was downloaded earlier.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.4.JPG)
+
+- Click on Decrypt password.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.5.JPG)
+
+- Click on Download remote desktop file and open it.
+- A popup will appear. Click on Connect.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.6.JPG)
+
+- Enter the password that was decrypted earlier.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.7.JPG)
+
+- Click on yes if it shows that it cannot be authenticated with its security certificate to proceed anyways. 
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.8.JPG)
+
+- You will be logged in to you Windows EC2 instance.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.9.JPG)
+
+- Go to command prompt (cmd) and run the below command to install  an IIS server on the EC2 instance so that it can launch a web page.
+    ```
+    DISM /online /enable-feature /featureName:IIS-DefaultDocument /All
+    ```
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.10.JPG)
+
+- In the start menu open the IIS. Then continue to Default Web Site and click on *Browse:80 (http) this will open the default web page in localhost mode.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.11.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.12.JPG)
+
+- Create a Custom Web Page. Open notepad and create a sample html website. Save it as index.html.
+    ```
+    <html>
+
+    <body>
+
+    <h1>Welcome to Day 51!</h1>
+
+    <h2>You have successfully created a custom web page.</h2>
+
+    </body>
+
+    </html>
+    ``` 
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.13.JPG)
+
+- Save it on disc C in folder inetpub > wwwroot.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.14.JPG)
+
+- Now when you refresh the locally hosted website you will see the content of index.html in the browser.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.15.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Created and connected to an EC2 Instance running the latest Windows free tier AMI and then connected to it from your machine using RDC. Installed Internet Information Services (IIS), created a custom webpage and hosted it on that EC2 Instance.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/launch-and-connect-windows-ec2-using-rdc-612)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7033519442550501377-RK9j?utm_source=share&utm_medium=member_desktop)
