@@ -20,12 +20,12 @@ EC2
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.JPG)
 
-    - Windows Server 2022 Base AMI of type t2.micro.
+   - Windows Server 2022 Base AMI of type t2.micro.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.1.JPG)
 
-    - Under Security Group section create a new SG with RDP (Remote Desktop Connection) from anywhere.
-    - Create a RSA(.pem) key pair and download it.
+   - Under Security Group section create a new SG with RDP (Remote Desktop Connection) from anywhere.
+   - Create a RSA(.pem) key pair and download it.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/051/day51.2.JPG)
 
