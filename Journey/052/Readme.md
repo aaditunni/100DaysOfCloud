@@ -1,52 +1,81 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Restricting users to specific AWS region
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Restricting users to specific AWS region by:
+- Deactivate unused region endpoint.
+- Only allow specific services in a region.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS free tier account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- IAM
+- Organizations
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 —
+Deactivate unused region endpoint.
+- AWS provides you a functionality through which you can disable user to generate STS credentials for unused region. - Go to the IAM console, click on Account settings and as you can see there is an option to Deactivate.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+Only allow specific services in a region.
+- Go to Organizations console.
+- go to Policies on right side menu and Enable Service Control Policies (SCP).
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Click on Service Control Policies and Create a new Policy.
+    ```
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+    {
+    "Sid": "DenyAllOutsideOregonandVirginia",
+    "Effect": "Deny",
+    "NotAction": [
+        "ec2:*",
+        "s3:*"
+    ],
+    "Resource": [
+        "*"
+    ],
+    "Condition": {
+        "StringNotEquals": {
+        "aws:RequestedRegion": [
+        "us-west-2",
+        "us-east-1"
+        ]
+        }
+    }
+    }
+    ]
+    }
+    ```
+    - In this policy, we are restricting the user to access EC2 and S3 only in us-west-2(Oregon) and us-east-1(N Virginia). 
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.3.JPG)
+
+- Save and click on the Policy and Attach the policy to the Organization or an account and they will only be able to access EC2 and S3 in those two regions.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.4.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/050/day50.5.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Created a Service Control policy to restrict users to specific regions. 
 
 ## Social Proof
 
 ✍️ Show that you shared your process on Twitter or LinkedIn
 
-[link](link)
+[Blog](https://dev.to/aaditunni/restricting-users-to-specific-aws-region-5ebm)
+
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7033903589399871489-Dq1w?utm_source=share&utm_medium=member_desktop)
