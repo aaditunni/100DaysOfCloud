@@ -1,52 +1,25 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
-## Introduction
-
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+# AWS UG Dubai Meetup #27
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Today, I attended the AWS User Group Dubai Meetup #27 where two awesome speakers presented on rate limiting in a modern application world and Automation in Cloud.
 
-## Try yourself
+In this session, I learnt 
+ - Why rate limiting is significant in modern systems and why it’s important to design a better system that operates as a good neighbor to all the systems around it.
+ To make sure an application is actually a good neighbor is by using limits so that the application is super modern and robust and can also process a lot of data but also doesn't cause damage to the other side. 
+    - There are many reasons for using limits and one of them is the cost factor. For example Dynamo DB is a serverless NoSQL database that scales automatically but adding more an more data to the database without limits can incur a huge cost.
+    - While using Lambda, we can limit the number of concurrent Lambda function by setting function concurrency. Another way is by using Event filtering in Lambda and it can filter the incoming messages before function invocation to reduce traffic to function and costs.
+    - When handling RDS connections we can run into a problem like failure to get connection from the pool and for that we can use buffering, i.e is by using SQS or by using RS proxy which will reuse the connections to make sure the application is not exhausting all the connections.
+    - Using API throttling to allocate capacity with quotas and request rates.
+    - By using caching layer for frequently requested data.
+    - Using asynchronous workloads.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+- Introduction to Automation tools such as AWS CloudFormation, Ansible and other automation tools and with this we can automatically do repetitive tasks by using a few lines of code.
+There was a demo on on cloud formation templates to create AWS VPC with resources in it, then using Ansible to create configuration files of AWS resources(Web/APPServer,DB) on on-premises systems.
 
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/aws-ug-dubai-meetup-27-4nhl)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7034258184630382592-0SBC?utm_source=share&utm_medium=member_desktop)
