@@ -29,7 +29,7 @@ This is the command for mac. For other OS, see the picture below.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/054/day54.3.JPG)
 
-- Move the text file one directory back. I created the text file by right clicking and selecting create a new file option and then moved it using this command :
+- Move the text file one directory back. I created the text file by right clicking and selecting create a new file option and then moved it using this command. We do this so that we don't accidently push the text file with sensitive data to our GitHub repo :
     ```
         mv sensitive.txt ..
     ```
