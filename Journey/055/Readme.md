@@ -10,15 +10,15 @@ Here's what I completed:
 
 By doing this, I was able to view the Webpage of the web application, sign up and create a new user as well as log in with that newly created user.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/054/day55.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/055/day55.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/054/day55.1.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/055/day55.1.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/054/day55.2.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/055/day55.2.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/054/day54.3.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/055/day55.3.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/054/day54.4.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/055/day55.4.JPG)
 
 
 ## Social Proof
