@@ -6,6 +6,8 @@ Today, I completed the Week 0 of the FREE AWS Cloud Project Bootcamp by Andrew B
 
 [GitHub repo](https://github.com/aaditunni/aws-bootcamp-cruddur-2023/blob/main/journal/week0/week0.md)
 
+You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
+
 
 ## Social Proof
 
