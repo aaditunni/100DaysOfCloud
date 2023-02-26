@@ -98,7 +98,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 54 > [My Fifty-fourth Day](Journey/054/Readme.md)
 - [ ] ☁️ 55 > [My Fifty-fifth Day](Journey/055/Readme.md)
 - [ ] ☁️ 56 > [My Fifty-sixth Day](Journey/056/Readme.md)
-- [ ] ☁️ 57 > [](Journey/057/Readme.md)
+- [ ] ☁️ 57 > [My Fifty-seventh Day](Journey/057/Readme.md)
 - [ ] ☁️ 58 > [](Journey/058/Readme.md)
 - [ ] ☁️ 59 > [](Journey/059/Readme.md)
 - [ ] ☁️ 60 > [](Journey/060/Readme.md)

@@ -1,52 +1,88 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Finding vulnerabilities on EC2 instance using Amazon Inspector
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Amazon Inspector allows us to find vulnerabilities on configured EC2 instances. There are 2 types of assessment runs are performed, Network assessment and Host assessment. 
+Network assessment has Network Reachability package rule while Host assessment has three types of package rule i.e. Common vulnerabilities and exposures, Center for Internet Security (CIS) Benchmarks, Security best practices for Amazon Inspector. There are mainly three types of Severity levels for rules in Amazon Inspector i.e. High, Medium, and Low. Informational severity of findings is just best practices recommended by Amazon Inspector.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+AWS account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- EC2
+- Amazon Inspector
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — EC2
+- Create a Security Group EC2 
+    - Choose Type: SSH Source: Anywhere (IPv4).
+    - Choose type: Custom TCP Rule Port Range: 20 Source: Anywhere (IPv4).
+    - Choose type: Custom TCP Rule Port Range: 21 Source: Anywhere (IPv4).
+    - Choose type: Custom TCP Rule Port Range: 23 Source: Anywhere (IPv4).
+- Launch an free tier eligible EC2 instance and use the above security group.
+- SSH into the EC2 instance and install the AWS Agent.
+- Download the agent installation script by running the following commands:
+    ```
+        wget https://inspector-agent.amazonaws.com/linux/latest/install
+    ```
+- To install the agent, run the following command:
+    ```
+        sudo bash install
+    ```
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 2 — Inspector
+- Go to the inspector console (classic version). Click on the Cancel button present on the right bottom corner.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- On the left side menu, click on the Assessment targets.
+- Click on the Create button.
+- Give a name.
+- Select Include all EC2 instances in this AWS account and region.
+- Install Agents is selected by default.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Click OK on the popup.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.3.JPG)
+
+- Click Assessment template and create.
+    - Select the target created earlier for target name.
+    - For Rules packages, select all from dropdown list.
+    - Create.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.4.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.5.JPG)
+
+- Select the template and click Run.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.6.JPG)
+
+- To see the Assessment Run and its result, click on the Assessment runs present on the left side menu.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.7.JPG)
+
+- Click on the number of findings to know about the vulnerabilities found by Inspector on the EC2 instance.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.8.JPG)
+
+- Click on the Assessment runs, present on the left side menu and choose the Download report button to download the report as PDF.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/057/day57.9.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Ran Amazon Inspector and found vulnerabilities on EC2 instance.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/finding-vulnerabilities-on-ec2-instance-using-amazon-inspector-5h95)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7035615319255564288-T-vf?utm_source=share&utm_medium=member_desktop)
