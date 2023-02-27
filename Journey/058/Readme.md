@@ -1,52 +1,111 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Install Python modules for Lambda using Cloud9
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+For a Lambda function to work with some libraries it needs to be uploaded as a separate module as lambda doesn't isn't inbuilt with many python libraries. To do that a new Cloud9 environment will be started and in it a pip commands executed in terminal. Then modules will be packed and upload to lambda function.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- AWS account.
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Lambda
+- Cloud9
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — Lambda
+- Go to the Lambda console and Create a new function.
+- Give a function name.
+- Select Python 3.9 as Runtime.
+- Create.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Delete the existing coe and paste the below code:
+    ```
+        import json
 
-### Step 1 — Summary of Step
+        import requests
 
-![Screenshot](https://via.placeholder.com/500x300)
+        
+        def lambda_handler(event, context):
 
-### Step 3 — Summary of Step
+            r = requests.get('https://github.com') 
 
-![Screenshot](https://via.placeholder.com/500x300)
+            print(r.status_code)
+
+            print(r.headers['Date'])
+
+            print(r.headers['server'])
+
+            return {
+
+                'statusCode': 200,
+
+                'body': json.dumps('success')
+
+            }
+    ```
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.1.JPG)
+
+- Try to test it  and it will respond with error message because request package is not part of Lambda Python standard library.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.2.JPG)
+
+### Step 2 — Cloud9
+- Go to Cloud9 console and create a new environment.
+- Give a name.
+- Choose environment type as New EC2 instance. 
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.3.JPG)
+
+- Leave everything for the instance configuration as default (free tier).
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.4.JPG)
+
+- Choose Connection as AWS System Manager (SSM).
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.5.JPG)
+
+- Create.
+- On left side menu, click on the AWS logo and goto the Lambda function and right click and select download.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.6.JPG)
+
+- Now, in your environment directory, select the downloaded Lambda function, right click and select Open Terminal Here.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.7.JPG)
+
+- Run the below command in Terminal to install request library in (replace LAMBDA_NAME withe the name of your Lambda function) :
+    ```
+        pip install --target ~/environment/LAMBDA_NAME/ requests
+    ```
+- Then to zip the library run the below command to zip all the files:
+    ```
+        zip -r ../my-deployment-package.zip *
+    ```
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.8.JPG)
+
+- Right click on the newly created zip file and click Download to download that zip file.
+- Back in Lambda upload that zip package and test your function.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.9.JPG)
+
+- You will get a success message.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/058/day58.10.JPG)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Installed Python modules for Lambda using Cloud9.
 
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/install-python-modules-for-lambda-using-cloud9-3kn5)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7036083024664379392-qsM4?utm_source=share&utm_medium=member_desktop)
