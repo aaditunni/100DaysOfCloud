@@ -100,7 +100,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 56 > [My Fifty-sixth Day](Journey/056/Readme.md)
 - [ ] ☁️ 57 > [My Fifty-seventh Day](Journey/057/Readme.md)
 - [ ] ☁️ 58 > [My Fifty-eight Day](Journey/058/Readme.md)
-- [ ] ☁️ 59 > [](Journey/059/Readme.md)
+- [ ] ☁️ 59 > [My Fifty-ninth Day](Journey/059/Readme.md)
 - [ ] ☁️ 60 > [](Journey/060/Readme.md)
 
 ## Stumbling through the caves
