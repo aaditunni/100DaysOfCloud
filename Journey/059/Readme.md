@@ -5,7 +5,7 @@
 Today, I started learning Docker Fundamentals by Adrian Cantrill. While doing the Free AWS Cloud Project Bootcamp by Andrew Brown, I realized that I needed to know and understand more about Docker and checked out the suggested course.
 
 I learned some basics about Docker and it's Architecture. 
-- Docker host or container host is the physical hardware. Containers un on them.
+- Docker host or container host is the physical hardware. Containers run on them.
 - On top of this is th host OS.
 - On top of this is a container engine called Docker Engine.
 - By comparison, it is lighter than a hypervisor because it has less to do.
