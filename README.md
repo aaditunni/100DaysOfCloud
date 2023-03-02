@@ -105,7 +105,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 
 ## Stumbling through the caves
 
-- [ ] ☁️ 61 > [](Journey/061/Readme.md)
+- [ ] ☁️ 61 > [My Sixty-first Day](Journey/061/Readme.md)
 - [ ] ☁️ 62 > [](Journey/062/Readme.md)
 - [ ] ☁️ 63 > [](Journey/063/Readme.md)
 - [ ] ☁️ 64 > [](Journey/064/Readme.md)
