@@ -20,6 +20,7 @@ By doing this, I was able to view the Webpage of the web application, sign up an
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/055/day55.4.JPG)
 
+You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
 ## Social Proof
 
