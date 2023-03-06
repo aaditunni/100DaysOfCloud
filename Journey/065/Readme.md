@@ -70,7 +70,7 @@ Create two or more S3 buckets in different regions. Here, I created two buckets.
         dd if=/dev/urandom of=test1.file bs=1M count=10
         aws s3 cp test1.file s3://YOUR_MRAP_ARN/
     ```
-- This will create a file and copy to the bucket closes to the location you are in and then replicate to the other bucket(s) within a few minutes. 
+- This will create a file and copy to the bucket closest to the location you are in and then replicate to the other bucket(s) within a few minutes. You can also do this from your local machine and it will upload to the bucket closest to the location of your ISP.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/065/day65.12.JPG)
 
