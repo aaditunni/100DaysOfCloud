@@ -1,52 +1,43 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Analyze Video and Extract Data using Amazon Rekognition
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Analyze a sample video and extract metadata from it.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- AWS free tier account.
+- A sample video to analyze. You can download this [sample video]() and use it too. Don't forget to unzip it.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Analyzing video automatically extracts rich metadata, which can be used to create a searchable video library, perform content moderation, or provide personalized VIP experiences.
 
-## Cloud Research
+## Services Covered
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Rekognition
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
 ### Step 1 — Summary of Step
+- Go to the Rekognition console.
+- Click the down arrow under Choose a sample or upload your own, click Your own video, and select any video footage you have or the one you downloaded.
+- It will take some time to analyze the video.
+- Once analyzed, click on People to see the faces detected.
+- Clicking on a face will show you where the face was shown throughout the video.
+- If they are celebrities then they will be shown under Celebrities tab.
+- Clicking on Objects and Activities will let you choose from a list of  objects or activities from the video and selecting one will show you where all it is present in the video.
 
-![Screenshot](https://via.placeholder.com/500x300)
+Cleanup:
+- Go to S3 console and you'll notice a bucket name with recognition in the name. Empty and then delete the bucket.
 
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Analyzed a sample video and extracted metadata using Amazon Rekognition.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/analyze-video-and-extract-data-using-amazon-rekognition-4j1m)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7038982238436270080-wMnx?utm_source=share&utm_medium=member_desktop)
