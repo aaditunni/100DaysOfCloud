@@ -1,52 +1,82 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Update CloudFormation template
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Update the instance type of one EC2 instance, add an inbound security rule allowing HTTP access to the instances from anywhere exposing the instance id of one of the instances as a stack template output.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- AWS free tier account.
+- Download and unzip [template.yaml file]().
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- CloudFormation
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 —
+- Go to the CloudFormation console.
+- Create a Stack using the template.yaml file. 
+- Give the stack name as day68
+- This will create the resources.
+- Once it is CREATED, click on Stack Actions and Edit termination protection an Enable it.
+- Here, the EC2 instances are t2.micro type and security group attached to it has an inbound rule that allows SSH on port 22 from anywhere. We will update it so that one of the instance type is t3.micro and an inbound rule of HTTP on port from anywhere.
+- Click on Update.
+- In Update stack page, Select Edit template in designer and Click View in designer.
+- In designer, replace the TestEc2Instance with this code:
+    ```
+        TestEc2Instance:
+            Type: "AWS::EC2::Instance"
+            Properties:
+            ImageId: !Ref LatestAmiId
+            InstanceType: t3.micro
+            KeyName: !Ref "AWS::AccountId"
+            NetworkInterfaces:
+                - AssociatePublicIpAddress: "true"
+                DeviceIndex: "0"
+                GroupSet:
+                    - Ref: Ec2InstanceSecurityGroup
+                SubnetId: !Ref PublicSubnet
+            Tags:
+                - Key: Name
+                Value: !Sub ${TagPrefix} Test Instance
+    ```
 
-### Step 1 — Summary of Step
+- Add a security rule by pasting this code under the Security rules:
+    ```
+        Ec2InstanceSecurityGroup:
+            Type: "AWS::EC2::SecurityGroup"
+            Properties:
+            GroupDescription: Security group for EC2 instances
+            GroupName: ec2-instance-sg
+            VpcId: !Ref VPC
+            SecurityGroupIngress:
+            - IpProtocol: tcp
+                FromPort: 80
+                ToPort: 80
+                CidrIp: 0.0.0.0/0
+    ```
+- Add a Template Output:
+    ```
+        TestEc2Instance:
+            Description: Instance Id
+            Value: !Ref TestEc2Instance
+    ```
+- Click on Update Stack in the designer.
+- Under Configure Stack option, select IAMRoleTwo in Permissions.
+- Update.
+- You will notice that the t2.micro in TestEc2Instance is updated to t3.micro and an inbound rule added to the existing security group.
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
+Delete Stack.
+Empty and delete the S3 bucket that was created automatically during update process. 
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Updated the instance type of one EC2 instance, added an inbound security rule allowing HTTP access to the instances from anywhere exposing the instance id of one of the instances as a stack template output.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/update-cloudformation-template-2fdm)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7039708899406454784-1EO2?utm_source=share&utm_medium=member_desktop)
