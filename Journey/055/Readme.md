@@ -1,4 +1,4 @@
-# FREE AWS Cloud Project Bootcamp
+# FREE AWS Cloud Project Bootcamp Week 1 Part 1
 
 ## Cloud Research
 
