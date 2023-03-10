@@ -7,7 +7,7 @@ Update the instance type of one EC2 instance, add an inbound security rule allow
 ## Prerequisite
 
 - AWS free tier account.
-- Download and unzip [template.yaml file]().
+- Download and unzip [template.yaml file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/template.yaml).
 
 ## Services Covered
 
@@ -18,12 +18,26 @@ Update the instance type of one EC2 instance, add an inbound security rule allow
 ### Step 1 —
 - Go to the CloudFormation console.
 - Create a Stack using the template.yaml file. 
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.JPG)
+
 - Give the stack name as day68
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.1.JPG)
+
 - This will create the resources.
 - Once it is CREATED, click on Stack Actions and Edit termination protection an Enable it.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.2.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.3.JPG)
+
 - Here, the EC2 instances are t2.micro type and security group attached to it has an inbound rule that allows SSH on port 22 from anywhere. We will update it so that one of the instance type is t3.micro and an inbound rule of HTTP on port from anywhere.
 - Click on Update.
 - In Update stack page, Select Edit template in designer and Click View in designer.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.4.JPG)
+
 - In designer, replace the TestEc2Instance with this code:
     ```
         TestEc2Instance:
@@ -64,8 +78,17 @@ Update the instance type of one EC2 instance, add an inbound security rule allow
             Value: !Ref TestEc2Instance
     ```
 - Click on Update Stack in the designer.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.5.JPG)
+
 - Under Configure Stack option, select IAMRoleTwo in Permissions.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.6.JPG)
+
 - Update.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/068/day68.7.JPG)
+
 - You will notice that the t2.micro in TestEc2Instance is updated to t3.micro and an inbound rule added to the existing security group.
 
 Delete Stack.
