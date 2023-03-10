@@ -113,7 +113,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 66 > [My Sixty-sixth Day](Journey/066/Readme.md)
 - [ ] ☁️ 67 > [My Sixty-seventh Day](Journey/067/Readme.md)
 - [ ] ☁️ 68 > [My Sixty-eight Day](Journey/068/Readme.md)
-- [ ] ☁️ 69 > [](Journey/069/Readme.md)
+- [ ] ☁️ 69 > [My Sixty-ninth Day](Journey/069/Readme.md)
 - [ ] ☁️ 70 > [](Journey/070/Readme.md)
 
 ## Resting at the Lagoon
