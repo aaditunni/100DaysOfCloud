@@ -1,52 +1,22 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
-## Introduction
-
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+# FREE AWS Cloud Project Bootcamp Week 3 Part 3
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Today, I completed a part of the Week 3 of the FREE AWS Cloud Project Bootcamp by Andrew Brown but came across an error which is hindering me from moving on to Week 4. 
 
-## Try yourself
+Here's what I completed:
+- Implemented JWT verification/authentication on the server side.
+- Watched different approaches to verifying JWTs and understood why an approach wasn't chosen and why we kept it simple and clean.
+- Watched Ashish's Week 3 - Decentralized Authentication and understood the different types of Authentication, Cognito and its features, Decentralized Authentication Tokens and a few best practices for Cognito.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+By doing this, I should have been able to verify, authenticate and authorize on the server side whenever I login but due to the error, my backend port is not opening and not letting me access the data. Spend the whole day trying to solve it. Tried cross checking with the code of someone else who had the same issue and solved it yet no success. Have asked the person to help me figure out the issue and looking forward to that.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/070/day70.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/free-aws-cloud-project-bootcamp-week-3-part-3-1d7e)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7040445439912886272-cwts?utm_source=share&utm_medium=member_desktop)
