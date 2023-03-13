@@ -1,52 +1,26 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
-## Introduction
-
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+# FREE AWS Cloud Project Bootcamp Week 4 Part 1
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Today, I started the Week 4 of the FREE AWS Cloud Project Bootcamp by Andrew Brown.
 
-## Try yourself
+I was lazy today and didn't do anything much other than watch Ashish's Week 4 - Security Considerations video - Securing Your Amazon RDS Postgres Database. He talks about the different Databases in cloud and the types of database engine in Amazon RDS.
+Then he talks about the Business use case of it and shows a demo on creating a RDS Postgres Database and connect to it securely.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+A few of the security best practices are:
+- Use VPC to create a private network for RDS instance. It helps to prevent unauthorized access to our instance from public internet.
+- RDS instances should only be in AWS regions that you are legally allowed to be holding user data in.
+- Enable CloudTrail to monitor alerts on malicious RDS behavior.
+- Security groups should be restricted only t known IPs.
+- Don't let the RDS be internet accessible.
+- Use Secrets Manager to automatically rotate secrets for RDS.
+- Use appropriate IAM authentications.
 
-### Step 1 — Summary of Step
+You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/free-aws-cloud-project-bootcamp-week-4-part-1-4ojj)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7041152354552848384-dIG3?utm_source=share&utm_medium=member_desktop)
