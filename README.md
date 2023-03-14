@@ -120,7 +120,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 
 - [ ] ☁️ 71 > [My Seventy-first Day](Journey/071/Readme.md)
 - [ ] ☁️ 72 > [My Seventy-second Day](Journey/072/Readme.md)
-- [ ] ☁️ 73 > [](Journey/073/Readme.md)
+- [ ] ☁️ 73 > [My Seventy-third Day](Journey/073/Readme.md)
 - [ ] ☁️ 74 > [](Journey/074/Readme.md)
 - [ ] ☁️ 75 > [](Journey/075/Readme.md)
 - [ ] ☁️ 76 > [](Journey/076/Readme.md)
