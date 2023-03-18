@@ -124,7 +124,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 74 > [My Seventy-fourth Day](Journey/074/Readme.md)
 - [ ] ☁️ 75 > [My Seventy-fifth day](Journey/075/Readme.md)
 - [ ] ☁️ 76 > [My Seventy-sixth Day](Journey/076/Readme.md)
-- [ ] ☁️ 77 > [](Journey/077/Readme.md)
+- [ ] ☁️ 77 > [My Seventy-seventh Day](Journey/077/Readme.md)
 - [ ] ☁️ 78 > [](Journey/078/Readme.md)
 - [ ] ☁️ 79 > [](Journey/079/Readme.md)
 - [ ] ☁️ 80 > [](Journey/080/Readme.md)
