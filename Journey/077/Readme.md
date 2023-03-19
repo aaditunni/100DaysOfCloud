@@ -8,6 +8,7 @@ Here's what I completed:
 - Create Cognito Trigger to insert user into database.
   - Implement a Lambda that runs in a VPC and commits code to RDS
 
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/077/day77.JPG)
 
 You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
