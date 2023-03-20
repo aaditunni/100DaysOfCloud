@@ -126,7 +126,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 76 > [My Seventy-sixth Day](Journey/076/Readme.md)
 - [ ] ☁️ 77 > [My Seventy-seventh Day](Journey/077/Readme.md)
 - [ ] ☁️ 78 > [My Seventy-eight Day](Journey/078/Readme.md)
-- [ ] ☁️ 79 > [](Journey/079/Readme.md)
+- [ ] ☁️ 79 > [My Seventy-ninth Day](Journey/079/Readme.md)
 - [ ] ☁️ 80 > [](Journey/080/Readme.md)
 
 ## Up into the mountains
