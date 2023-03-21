@@ -6,7 +6,7 @@ Create a Video on Demand ("CatTube") backend that will take any uploaded video f
 
 ## Prerequisite
 
-- AWS free tier account.
+- AWS account.
 
 ## Services Covered
 
