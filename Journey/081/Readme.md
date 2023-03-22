@@ -1,52 +1,26 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
-## Introduction
-
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+# FREE AWS Cloud Project Bootcamp Week 5 Part 2
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Today, I did a part of the Week 5 of the FREE AWS Cloud Project Bootcamp by Andrew Brown.
 
-## Try yourself
+Here's what I completed:
+- I figured what the error was for my Week 4 when implementing create activity. Apparently, the user in my cognito and in my database where different. Once I deleted the the previous user and created a new one, then it started working properly and I could post cruds/posts.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/081/day81.JPG)
 
-### Step 1 — Summary of Step
+- Watched Week 5 - Live Streamed Video - NoSQL and Caching where more about messaging was discussed.
+ - A user wants to see a list of messages that belong to a message group The messages must be ordered by the created_at timestamp from newest to oldest (DESC).
+ - A user wants to see a list of previous conversations. These conversations are listed from newest to oldest (DESC) We want to see the other person we are talking to. We want to see the last message (from whomever) in summary.
+ - Create a message.
+ - When a user creates a message we need to update the conversation to display the last message information for the conversation.
 
-![Screenshot](https://via.placeholder.com/500x300)
 
-### Step 1 — Summary of Step
+You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/free-aws-cloud-project-bootcamp-week-5-part-2-58nh)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7044397549914402817-TlUT?utm_source=share&utm_medium=member_desktop)
