@@ -1,52 +1,23 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
-## Introduction
-
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+# FREE AWS Cloud Project Bootcamp Week 5 Part 4
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Today, I did a part of the Week 5 of the FREE AWS Cloud Project Bootcamp by Andrew Brown.
 
-## Try yourself
+Here's what I completed:
+- I completed implementing the code for Pattern A, B and C but ended up with an error. I think the error is due to the cognito user and the user in the local being different or something. I will be checking on it tomorrow and updating it here with pictures once solved.
+    - Implement Update Cognito ID Script for Postgres Database.
+    - Implement (Pattern A) Listing Messages in Message Group into Application.
+    - Implement (Pattern B) Listing Messages Group into Application.
+    - Implement (Pattern C) Creating a Message for an existing Message Group into Application.
+    - Implement (Pattern D) Creating a Message for a new Message Group into Application.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
 
-### Step 1 — Summary of Step
+You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/free-aws-cloud-project-bootcamp-week-5-part-4-53ai)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7045167611881435136-n3x_?utm_source=share&utm_medium=member_desktop)

@@ -8,6 +8,7 @@ Here's what I completed:
 - Implement Schema Load Script.
 - Implement Seed Script.
 - Implement Scan Script.
+- Implement Pattern Scripts for Read and List Conversations.
 
 This is the messaging part of cruddur and doing it with mock data
 
