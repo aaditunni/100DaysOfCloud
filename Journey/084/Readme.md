@@ -9,7 +9,7 @@ The Dog API we’re using is: https://dog.ceo/dog-api/
 ## Prerequisite
 
 - AWS account.
-- Download the [function.zip file](). Unzip it once.
+- Download the [function.zip file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/084/function.zip). Unzip it once.
 
 ## Services Covered
 
