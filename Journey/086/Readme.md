@@ -1,52 +1,100 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Predicting time series data with Forecast
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Future power consumption will be predicted based on time series data uploaded to S3 in form of csv file.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- AWS account.
+- Download  [electricityusagedata.csv file]()
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- S3
+- Forecast
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+### Step 1 — S3
+Create a S3 bucket and upload the electricityusagedata.csv file to S3 bucket.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Step 1 — Forecast
+Go to the Forecast console.
 
-### Step 1 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.1.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+- Create new dataset group.
+- Give it a name. 
+- Choose Custom forecasting domain.
 
-### Step 3 — Summary of Step
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.2.JPG)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.3.JPG)
+
+- On the next tab specify the frequency of data to 1 hour and for data schema use the following JSON:
+    ```
+        {
+            "Attributes": [
+                {
+                    "AttributeName": "timestamp",
+                    "AttributeType": "timestamp"
+                },
+                {
+                    "AttributeName": "target_value",
+                    "AttributeType": "float"
+                },
+                {
+                    "AttributeName": "item_id",
+                    "AttributeType": "string"
+                }
+            ]
+        }
+    ```
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.4.JPG)
+
+- For the data location input the S3 buckets URL.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.5.JPG)
+
+- After the import completes start the predictor training.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.6.JPG)
+
+- For Forecast horizon: Enter 36 and Forecast frequency: Select 1 hour from the drop-down menu. Training will take some time to complete.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.7.JPG)
+
+- Back in the dashboard click Start to generate forecast. Use the predictor created in previous step. This will also take a while.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.8.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.9.JPG)
+
+- When forecast finally get created you can go and query it. Specify start date as 2014/12/31 and end date: 2015/01/02 and key to client_1.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.10.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.11.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/day86.12.JPG)
+
+The actual energy usage is shown in grey on the left and has no quantiles shown because there is no uncertainty. The forecast predictions are shown by three lines. The numbers P10, P50, and P90 correspond to the 10%, 50%, and 90% quantiles, respectively. The actual value has an 80% chance of being between the P90 and P10 range (90 - 10 = 80). The larger the number of PXX, the higher the probability that the value will fall within that range. The value of P50 line is the midpoint of the range.
+
+
+### Step 3 — Cleanup
+- Delete the dataset.
+- Empty and delete S3 bucket.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Predicted future power consumption based on time series data uploaded to S3 in form of csv file.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/predicting-time-series-data-with-forecast-4ch1)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7046260613542469632-kYye?utm_source=share&utm_medium=member_desktop)
