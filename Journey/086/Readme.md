@@ -7,7 +7,7 @@ Future power consumption will be predicted based on time series data uploaded to
 ## Prerequisite
 
 - AWS account.
-- Download  [electricityusagedata.csv file]()
+- Download and unzip [electricityusagedata.csv file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/086/electricityusagedata.csv)
 
 ## Services Covered
 
