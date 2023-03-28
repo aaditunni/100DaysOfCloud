@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Future power consumption will be predicted based on time series data uploaded to S3 in form of csv file.
+Future power consumption will be predicted based on time series data uploaded to S3 in form of csv file using Forecast.
 
 ## Prerequisite
 
@@ -91,7 +91,7 @@ The actual energy usage is shown in grey on the left and has no quantiles shown 
 
 ## ☁️ Cloud Outcome
 
-Predicted future power consumption based on time series data uploaded to S3 in form of csv file.
+Predicted future power consumption based on time series data uploaded to S3 in form of csv file using Forecast.
 
 ## Social Proof
 
