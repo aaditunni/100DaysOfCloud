@@ -70,40 +70,40 @@ Go to the API Gateway console.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.5.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.6.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.6.JPG)
 
 - Next create a Method in Actions and in drop down menu choose GET.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.7.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.7.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.8.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.8.JPG)
 
 - As Integration type choose Lambda Function and then type the earlier created functions name.
 - Check Use Lambda proxy integration.
 - Save.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.9.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.9.JPG)
 
 - On the Method Execution screen, choose Method Request and in the settings change the Request Validator field to Validate body, query string parameters and headers. Then under URL Query String Parameters add query string, enter emailid and make it Required.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.10.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.10.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.11.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.11.JPG)
 
 - Go back to Method Execution page.
 - Go to the Integration Request and under Mapping templates for the Request body passthrough choose When there are no templates defined and Add mapping template with value application/json. Then generate template Method Request passthrough.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.12.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.12.JPG)
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.13.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.13.JPG)
 
 - Go back, select the GET method resource and in Actions choose Deploy API.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.14.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.14.JPG)
 
 - Choose the development stage and give it a name and deploy.
 
-![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/087/day88.15.JPG)
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/088/day88.15.JPG)
 
 - Then under Stages choose the name resource and GET method and copy the URL. Now if you replace name with Production and add emailid (?emailid=anyemailid@whatever.com) you will receive GET request's response from the API.
 
