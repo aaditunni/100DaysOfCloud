@@ -139,7 +139,7 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 86 > [My Eighty-sixth Day](Journey/086/Readme.md)
 - [ ] ☁️ 87 > [My Eighty-seventh Day](Journey/087/Readme.md)
 - [ ] ☁️ 88 > [My Eighty-eight Day](Journey/088/Readme.md)
-- [ ] ☁️ 89 > [](Journey/089/Readme.md)
+- [ ] ☁️ 89 > [My Eighty-ninth Day](Journey/089/Readme.md)
 - [ ] ☁️ 90 > [](Journey/090/Readme.md)
 
 ## Into the sky to touch the cloud!
