@@ -44,15 +44,15 @@ AWS free tier account.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.6.JPG)
 
-    - Select Public_Route Table and then click on Routes in the bottom window --> Click on Edit Routes --> Click on Add Route --> Destination → 0.0.0.0/0 and in Target → IGW select the Internet Gateway and choose our Internet Gateway (leave the existing route ).- Click Save Routes.
+   - Select Public Route Table and then click on Routes in the bottom window --> Click on Edit Routes --> Click on Add Route --> Destination → 0.0.0.0/0 and in Target → IGW select the Internet Gateway and choose our Internet Gateway (leave the existing route ).- Click Save Routes.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.7.JPG)
 
-    - Associate the Public subnet with this Public Route Table. Select Public_Route_Table --> Click on the Subnets associations Tab in the bottom window --> Click on Edit subnet Association --> Select the public subnet --> Click on Save.
+   - Associate the Public subnet with this Public Route Table. Select Public_Route_Table --> Click on the Subnets associations Tab in the bottom window --> Click on Edit subnet Association --> Select the public subnet --> Click on Save.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.8.JPG)
     
-    - Similarly associate private Route Table with private subnet.
+   - Similarly associate private Route Table with private subnet.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.9.JPG)
 
@@ -65,15 +65,15 @@ AWS free tier account.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.11.JPG)
 
-    - Select your NACL and then in the bottom window click on Inbound Rules → Edit Inbound Rules and then click on the Add Rule to allow traffic for SSH (Rule number 100) and ICMP (Rule number 200) with Source 0.0.0.0/0.
+   - Select your NACL and then in the bottom window click on Inbound Rules → Edit Inbound Rules and then click on the Add Rule to allow traffic for SSH (Rule number 100) and ICMP (Rule number 200) with Source 0.0.0.0/0.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.12.JPG)
 
-    - Click on Outbound Rules → Edit Outbound Rules and then click on the Add Rule to allow traffic for SSH (Rule number 100), ICMP (Rule number 200) and Custom TCP (Port range 1024-65535) with Source 0.0.0.0/0.
+   - Click on Outbound Rules → Edit Outbound Rules and then click on the Add Rule to allow traffic for SSH (Rule number 100), ICMP (Rule number 200) and Custom TCP (Port range 1024-65535) with Source 0.0.0.0/0.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.13.JPG)
 
-    - Associate both public and private subnets with this NACL. Select the NACL → Click on Subnet Association in the bottom window → Edit the Subnet association → Select both subnets we created and click on Edit.
+   - Associate both public and private subnets with this NACL. Select the NACL → Click on Subnet Association in the bottom window → Edit the Subnet association → Select both subnets we created and click on Edit.
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/089/day89.14.JPG)
 
