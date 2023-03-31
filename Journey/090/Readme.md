@@ -11,7 +11,7 @@ This week was quite difficult and took me a lot of days to complete. I am laggin
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/090/day90.JPG)
 
-Checkout what I did for Week 4 : [GitHub repo](https://github.com/aaditunni/aws-bootcamp-cruddur-2023/blob/main/journal//week5.md)
+Checkout what I did for Week 5 : [GitHub repo](https://github.com/aaditunni/aws-bootcamp-cruddur-2023/blob/main/journal//week5.md)
 
 You can watch the Bootcamp through this YouTube playlist : [FREE AWS Cloud Project Bootcamp playlist](https://youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
 
