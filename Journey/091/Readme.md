@@ -84,6 +84,7 @@ Create a terraform template to deploy security group, use default VPC and an EC2
         terraform apply
     ```
 - Type yes to proceed.
+- This will create a security group, use efault VPC and create an EC2 instance with the provided data.
 - Go to the AWS console and check if the resources are created.
 - Go to the EC2 instance and check it out using the Public IP address.
 
