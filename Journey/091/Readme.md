@@ -1,52 +1,113 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Launch a NGINX server on EC2 using Terraform
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Create a terraform template to deploy security group, use default VPC and an EC2 instance running NGINX.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- AWS free tier account.
+- Terraform installed.
+- AWS CLI installed.
+- AWS credentials configured (in your vscode, run aws configure and configure your access key, secret key, region, etc).
 
-## Use Case
+## Services Covered
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Terraform
+- EC2
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
 ### Step 1 — Summary of Step
+- Create a folder for your terraform code.
+- In terminal, go to the folder or directory you created.
+- Run:
+    ```
+        terraform init
+    ```
+- Create a terraform file with .tf extension. Installing terraform extension in vscode will help with proper formatting. 
+    ```
+        provider "aws" {
+        profile = "default"
+        region  = "us-east-1"
+        }
 
-![Screenshot](https://via.placeholder.com/500x300)
+        resource "aws_default_vpc" "default" {}
 
-### Step 1 — Summary of Step
+        resource "aws_security_group" "prod_web" {
+        name        = "prod_web"
+        description = "allow standard http and https ports inbound everything outbound"
 
-![Screenshot](https://via.placeholder.com/500x300)
+        ingress {
+            from_port   = 80
+            to_port     = 80
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        }
+        ingress {
+            from_port   = 443
+            to_port     = 443
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        }
+        egress {
+            from_port   = 0
+            to_port     = 0
+            protocol    = "-1"
+            cidr_blocks = ["0.0.0.0/0"]
+        }
+        }
+        resource "aws_instance" "prod_web" {
+            ami           = "ami-08749d2ea24a3e607"
+            instance_type = "t2.micro"
 
-### Step 3 — Summary of Step
+            vpc_security_group_ids = [
+            aws_security_group.prod_web.id
+            ]
 
-![Screenshot](https://via.placeholder.com/500x300)
+            tags = {
+            "Terraform" : "true"
+        }
+        }
+    ```
+- Paste the above code in your terraform file and save it. 
+- Go to the AWS Marketplace and search for NGINX server, choose the one from Bitnami, subscribe it and copy the AMI ID and replace it with the AMI ID in the above code. For instance type select any free tier one.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/091/day91.2.JPG)
+
+- Run the below code to see the execution plan:
+    ```
+        terraform plan
+    ```
+- Run the below command to deploy the resources:
+    ```
+        terraform apply
+    ```
+- Type yes to proceed.
+- Go to the AWS console and check if the resources are created.
+- Go to the EC2 instance and check it out using the Public IP address.
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/091/day91.JPG)
+
+![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/091/day91.1.JPG)
+
+- In order to destroy the resource you might want to run plan and see what's needed to be done by terraform, and save the output to a file:
+    ```
+        terraform plan -destroy -out destroy.plan
+    ```
+- Then apply that plan:
+    ```
+        terraform apply destroy.plan
+    ```
+- This will delete all the resources created and cleanup.
+
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+Created a terraform template to deploy security group, use default VPC and an EC2 instance running NGINX.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Blog](https://dev.to/aaditunni/launch-a-nginx-server-on-ec2-using-terraform-4jbg)
 
-[link](link)
+[LinkedIn](https://www.linkedin.com/posts/aaditunni_100daysofcloud-aws-cloud-activity-7048043657140015104-IX0L?utm_source=share&utm_medium=member_desktop)
