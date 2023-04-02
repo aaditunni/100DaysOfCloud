@@ -21,10 +21,6 @@ Create a terraform template to deploy security group, use default VPC and an EC2
 ### Step 1 — Summary of Step
 - Create a folder for your terraform code.
 - In terminal, go to the folder or directory you created.
-- Run:
-    ```
-        terraform init
-    ```
 - Create a terraform file with .tf extension. Installing terraform extension in vscode will help with proper formatting. 
     ```
         provider "aws" {
@@ -75,6 +71,10 @@ Create a terraform template to deploy security group, use default VPC and an EC2
 
 ![Screenshot](https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/091/day91.2.JPG)
 
+- Run:
+    ```
+        terraform init
+    ```
 - Run the below code to see the execution plan:
     ```
         terraform plan
@@ -84,7 +84,7 @@ Create a terraform template to deploy security group, use default VPC and an EC2
         terraform apply
     ```
 - Type yes to proceed.
-- This will create a security group, use efault VPC and create an EC2 instance with the provided data.
+- This will create a security group, use default VPC and create an EC2 instance with the provided data.
 - Go to the AWS console and check if the resources are created.
 - Go to the EC2 instance and check it out using the Public IP address.
 
