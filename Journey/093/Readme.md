@@ -297,8 +297,7 @@ Deploy a static website with S3 and CloudFront using Terraform.
 
     ```
 - In this code, first we mention the provider which will be download the provider i.e aws modules and such when we run the below command. It also specifies our credentials that is used to access our aws account. Here, I configured the credentials through cli instead of hardcoding it.
-- The above code basically creates an S3 bucket, uploads index.html to the bucket, enables static website hosting with the bucket, creates and attaches the required policies, creates a cloudfront distribution which is whitelisted to only a certain locations and also gives the cloudfront url as the output.
-    -  
+- The above code basically creates an S3 bucket, uploads index.html to the bucket, enables static website hosting with the bucket, creates and attaches the required policies, creates a cloudfront distribution which is whitelisted to only a certain locations and also gives the cloudfront url as the output. 
 - Run:
     ```
         terraform init
