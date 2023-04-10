@@ -10,7 +10,7 @@ Create a Lambda function and upload code of Arithmetic Operations using Ansible.
 - Ansible installed along with python, boto/boto3 and botocore.
 - Configure AWS credentials using aws configure.
 - Create a Role with AWSLambdaBasicExecutionRole policy.
-- Download the [day99.zip file]() into the same directory as your ansible playbook yaml file
+- Download the [day99.zip file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/blob/main/Journey/099/day99.zip) into the same directory as your ansible playbook yaml file
 
 ## Services Covered
 
