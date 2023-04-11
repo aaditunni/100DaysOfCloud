@@ -153,4 +153,4 @@ These challenges or projects may or may not cost you money. If it's under free t
 - [ ] ☁️ 97 > [My Ninety-seventh Day](Journey/097/Readme.md)
 - [ ] ☁️ 98 > [My Ninety-eight Day](Journey/098/Readme.md)
 - [ ] ☁️ 99 > [My Ninety-ninth Day](Journey/099/Readme.md)
-- [ ] ☁️ 100 > [](Journey/100/Readme.md)
+- [ ] ☁️ 100 > [My Hundredth Day](Journey/100/Readme.md)
