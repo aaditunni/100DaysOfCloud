@@ -12,7 +12,7 @@ The ALB will configured with a single listener (port 80). 2 target groups will b
 - Terraform installed.
 - AWS CLI installed.
 - AWS credentials configured (in your vscode, run "aws configure" and configure your access key, secret key, region, etc).
-- [Project file]() downloaded and extracted.
+- [Project file](https://downgit.github.io/#/home?url=https://github.com/aaditunni/100DaysOfCloud/tree/main/Journey/100/app-day100) downloaded and extracted.
 - A Key Pair created.
 - Your IP address noted.
 
